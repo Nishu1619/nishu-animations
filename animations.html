@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
+ 
+    <style>
+        /*! elementor-pro - v3.21.0 - 30-04-2024 */
+.elementor-cta,.elementor-widget-call-to-action .elementor-widget-container{overflow:hidden}.elementor-cta{position:relative;display:flex;transition:.5s}.elementor-cta--skin-classic .elementor-cta{flex-wrap:wrap}.elementor-cta--skin-classic .elementor-cta__bg-wrapper{position:relative;min-height:200px;width:100%}.elementor-cta--skin-classic .elementor-cta__content{transition:all .4s;width:100%;background-color:#f9fafa}.elementor-cta--skin-classic .elementor-cta__content-item,.elementor-cta--skin-classic .elementor-cta__content-item .elementor-icon{color:#3f444b;border-color:#3f444b;fill:#3f444b}.elementor-cta--skin-classic .elementor-cta__button.elementor-button{color:#3f444b;border-color:#3f444b}.elementor-cta--skin-cover .elementor-cta{display:block}.elementor-cta--skin-cover .elementor-cta__bg-wrapper{position:absolute;top:0;left:0;right:0;bottom:0;transition:all .4s;width:100%}.elementor-cta--skin-cover .elementor-cta__content{min-height:280px}.elementor-cta--skin-cover .elementor-cta__button.elementor-button,.elementor-cta--skin-cover .elementor-cta__content-item,.elementor-cta--skin-cover .elementor-cta__content-item .elementor-icon{color:#fff;border-color:#fff}.elementor-cta--layout-image-above .elementor-cta{flex-wrap:wrap}.elementor-cta--layout-image-above .elementor-cta__bg-wrapper{width:100%}.elementor-cta--layout-image-left .elementor-cta,.elementor-cta--layout-image-right .elementor-cta{flex-wrap:nowrap}.elementor-cta--layout-image-left .elementor-cta__bg-wrapper,.elementor-cta--layout-image-right .elementor-cta__bg-wrapper{width:auto;min-width:50%}.elementor-cta--layout-image-left .elementor-cta__content,.elementor-cta--layout-image-right .elementor-cta__content{flex-grow:1}.elementor-cta--layout-image-left .elementor-cta{flex-direction:row}.elementor-cta--layout-image-right .elementor-cta{flex-direction:row-reverse}.elementor-cta__bg,.elementor-cta__bg-overlay{position:absolute;top:0;left:0;right:0;bottom:0;transition:all .4s}.elementor-cta__bg-wrapper{z-index:1;overflow:hidden}.elementor-cta__bg{background-size:cover;background-position:50%;z-index:1}.elementor-cta__bg-overlay{z-index:2}.elementor-cta__button.elementor-button{cursor:pointer;align-self:center;margin-left:auto;margin-right:auto;border:2px solid #fff;background:transparent}.elementor-cta__button.elementor-button:hover{background:transparent;text-decoration:none}.elementor-cta__title{font-size:23px}.elementor-cta__content{z-index:1;overflow:hidden;display:flex;flex-wrap:wrap;align-items:center;align-content:center;padding:35px;width:100%}.elementor-cta__content,.elementor-cta__content-item{position:relative;transition:.5s;color:#fff}.elementor-cta__content-item{width:100%;margin:0}.elementor-cta__content-item:not(:last-child){margin-bottom:15px}.elementor-cta__content-item .elementor-icon{color:#fff}.elementor-cta--valign-top .elementor-cta__content{align-content:flex-start;align-items:flex-start}.elementor-cta--valign-middle .elementor-cta__content{align-content:center;align-items:center}.elementor-cta--valign-bottom .elementor-cta__content{align-content:flex-end;align-items:flex-end}.elementor-cta:hover .elementor-cta__bg-overlay{background-color:rgba(0,0,0,.3)}@media (max-device-width:1024px){.elementor-cta{cursor:pointer}}@media (min-width:-1){.elementor-cta--widescreen-layout-image-above .elementor-cta{flex-wrap:wrap}.elementor-cta--widescreen-layout-image-above .elementor-cta__bg-wrapper{width:100%}.elementor-cta--widescreen-layout-image-left .elementor-cta,.elementor-cta--widescreen-layout-image-right .elementor-cta{flex-wrap:nowrap}.elementor-cta--widescreen-layout-image-left .elementor-cta__bg-wrapper,.elementor-cta--widescreen-layout-image-right .elementor-cta__bg-wrapper{width:auto;min-width:50%}.elementor-cta--widescreen-layout-image-left .elementor-cta__content,.elementor-cta--widescreen-layout-image-right .elementor-cta__content{flex-grow:1}.elementor-cta--widescreen-layout-image-left .elementor-cta{flex-direction:row}.elementor-cta--widescreen-layout-image-right .elementor-cta{flex-direction:row-reverse}}@media (max-width:-1){.elementor-cta--laptop-layout-image-above .elementor-cta{flex-wrap:wrap}.elementor-cta--laptop-layout-image-above .elementor-cta__bg-wrapper{width:100%}.elementor-cta--laptop-layout-image-left .elementor-cta,.elementor-cta--laptop-layout-image-right .elementor-cta{flex-wrap:nowrap}.elementor-cta--laptop-layout-image-left .elementor-cta__bg-wrapper,.elementor-cta--laptop-layout-image-right .elementor-cta__bg-wrapper{width:auto;min-width:50%}.elementor-cta--laptop-layout-image-left .elementor-cta__content,.elementor-cta--laptop-layout-image-right .elementor-cta__content{flex-grow:1}.elementor-cta--laptop-layout-image-left .elementor-cta{flex-direction:row}.elementor-cta--laptop-layout-image-right .elementor-cta{flex-direction:row-reverse}}@media (max-width:-1){.elementor-cta--tablet_extra-layout-image-above .elementor-cta{flex-wrap:wrap}.elementor-cta--tablet_extra-layout-image-above .elementor-cta__bg-wrapper{width:100%}.elementor-cta--tablet_extra-layout-image-left .elementor-cta,.elementor-cta--tablet_extra-layout-image-right .elementor-cta{flex-wrap:nowrap}.elementor-cta--tablet_extra-layout-image-left .elementor-cta__bg-wrapper,.elementor-cta--tablet_extra-layout-image-right .elementor-cta__bg-wrapper{width:auto;min-width:50%}.elementor-cta--tablet_extra-layout-image-left .elementor-cta__content,.elementor-cta--tablet_extra-layout-image-right .elementor-cta__content{flex-grow:1}.elementor-cta--tablet_extra-layout-image-left .elementor-cta{flex-direction:row}.elementor-cta--tablet_extra-layout-image-right .elementor-cta{flex-direction:row-reverse}}@media (max-width:1024px){.elementor-cta--tablet-layout-image-above .elementor-cta{flex-wrap:wrap}.elementor-cta--tablet-layout-image-above .elementor-cta__bg-wrapper{width:100%}.elementor-cta--tablet-layout-image-left .elementor-cta,.elementor-cta--tablet-layout-image-right .elementor-cta{flex-wrap:nowrap}.elementor-cta--tablet-layout-image-left .elementor-cta__bg-wrapper,.elementor-cta--tablet-layout-image-right .elementor-cta__bg-wrapper{width:auto;min-width:50%}.elementor-cta--tablet-layout-image-left .elementor-cta__content,.elementor-cta--tablet-layout-image-right .elementor-cta__content{flex-grow:1}.elementor-cta--tablet-layout-image-left .elementor-cta{flex-direction:row}.elementor-cta--tablet-layout-image-right .elementor-cta{flex-direction:row-reverse}}@media (max-width:-1){.elementor-cta--mobile_extra-layout-image-above .elementor-cta{flex-wrap:wrap}.elementor-cta--mobile_extra-layout-image-above .elementor-cta__bg-wrapper{width:100%}.elementor-cta--mobile_extra-layout-image-left .elementor-cta,.elementor-cta--mobile_extra-layout-image-right .elementor-cta{flex-wrap:nowrap}.elementor-cta--mobile_extra-layout-image-left .elementor-cta__bg-wrapper,.elementor-cta--mobile_extra-layout-image-right .elementor-cta__bg-wrapper{width:auto;min-width:50%}.elementor-cta--mobile_extra-layout-image-left .elementor-cta__content,.elementor-cta--mobile_extra-layout-image-right .elementor-cta__content{flex-grow:1}.elementor-cta--mobile_extra-layout-image-left .elementor-cta{flex-direction:row}.elementor-cta--mobile_extra-layout-image-right .elementor-cta{flex-direction:row-reverse}}@media (max-width:767px){.elementor-cta--mobile-layout-image-above .elementor-cta{flex-wrap:wrap}.elementor-cta--mobile-layout-image-above .elementor-cta__bg-wrapper{width:100%}.elementor-cta--mobile-layout-image-left .elementor-cta,.elementor-cta--mobile-layout-image-right .elementor-cta{flex-wrap:nowrap}.elementor-cta--mobile-layout-image-left .elementor-cta__bg-wrapper,.elementor-cta--mobile-layout-image-right .elementor-cta__bg-wrapper{width:auto;min-width:50%}.elementor-cta--mobile-layout-image-left .elementor-cta__content,.elementor-cta--mobile-layout-image-right .elementor-cta__content{flex-grow:1}.elementor-cta--mobile-layout-image-left .elementor-cta{flex-direction:row}.elementor-cta--mobile-layout-image-right .elementor-cta{flex-direction:row-reverse}}.elementor-ribbon{position:absolute;z-index:1;top:0;left:auto;right:0;transform:rotate(90deg);width:150px;overflow:hidden;height:150px}.elementor-ribbon-inner{text-align:center;left:0;width:200%;transform:translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);margin-top:35px;font-size:13px;line-height:2;font-weight:800;text-transform:uppercase;background:#000;color:#fff}.elementor-ribbon.elementor-ribbon-left{transform:rotate(0);left:0;right:auto}.elementor-ribbon.elementor-ribbon-right{transform:rotate(90deg);left:auto;right:0}
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+
+        .inter {
+            font-family: Inter;
+            font-style: normal;
+        }
+
+        .lg\:max-w-7xl {
+            max-width: 1600px;
+        }
+
+        .elementor-cta__bg-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .elementor-cta__bg {
+      transition: transform 1s ease;
+      will-change: transform;
+    }
+
+    .elementor-cta:hover .elementor-cta__bg {
+      transform: scale(1.1); /* Adjust the scale value as needed */
+    }
+
+    .elementor-cta__content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .elementor-cta__bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .elementor-cta__title, .elementor-cta__description {
+      color: white;
+    }
+
+        .features-pos {
+            background: #000000;
+            background-size: cover;
+            background-position: 0 0;
+            padding: 100px 0;
+        }
+
+        #image_features {
+            width: 440px;
+            height: 397px;
+            border-radius: 20px;
+        }
+
+        .features-btn button,
+        .features-btn2 button {
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.20);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+            color: #FFF;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 89px;
+            padding: 0 55px;
+            width: 420px;
+            height: 89px;
+        }
+
+        .features-btn button.highlight,
+        .features-btn2 button.highlight {
+            border-radius: 20px;
+            background: var(--Linear, linear-gradient(276deg, #00407F 28.27%, #0068D2 106.45%));
+        }
+
+        .features-btn,
+        .features-btn2 {
+            gap: 14px;
+        }
+
+        .features-pos h2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 48px;
+            background: var(--Linear, linear-gradient(276deg, #00407F 28.27%, #0068D2 106.45%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .features-pos h2 span {
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.40) 100%);
+            color: #FFF;
+            -webkit-text-fill-color: initial;
+            padding: 39px 9px 39px 42px;
+
+        }
+
+        .feature-heading {
+            padding: 39px 0;
+        }
+
+        .features-pos h4 {
+            text-shadow: 0px 0px 28.5px rgba(0, 0, 0, 0.60);
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 48px;
+            color: #FFF;
+
+        }
+
+        .features-pos h3 {
+            color: #F9F9F9;
+            text-align: center;
+            text-shadow: 0px 0px 28.5px rgba(0, 0, 0, 0.60);
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 48px;
+            padding: 101px 0 24px 0;
+        }
+
+        .features-pos p {
+            color: #DCDCDC;
+            text-align: center;
+            text-shadow: 0px 0px 28.5px rgba(0, 0, 0, 0.60);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            padding-bottom: 201px;
+        }
+
+        .features-icon-gap {
+            gap: 40px;
+            padding: 0 0 60px 46px;
+        }
+
+        .padding-200px {
+            padding-top: 201px;
+        }
+       /* Swiper */
+       .swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-slide {
+  background-color: #fcfcfc;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fcfcfc;
+  font-size: 24px;
+}
+
+.swiper-slide > .swiper-slide-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent no-repeat 50% 50% /cover;
+}
+
+body {
+  text-align: center;
+}
+
+.swiper-slide .slide-01 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/03/slide-16-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-02 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2019/08/slide-01-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-03 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-05-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-04 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-07-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-05 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-09-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-06 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-13-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-07 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-08-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-08 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-11-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-09 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-04-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-10 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2019/08/slide-03-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-11 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-06-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-12 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-12-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-13 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-15-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-slide .slide-14 {
+  background-image: url(https://martin-kovacs.com/wp-content/uploads/2024/02/slide-10-2048.jpg);
+  transform-origin: 50% 50%;
+}
+
+.swiper-scale-effect .swiper-slide-cover {
+  transition-timing-function: linear;
+  transition-duration: 20s;
+  transform: scale(1);
+}
+
+.swiper-scale-effect .swiper-slide.swiper-slide-active .swiper-slide-cover {
+  transform: scale(1.3);
+}
+
+:root {
+  --swiper-pagination-bottom: 40px;
+  --swiper-theme-color: rgba(252, 252, 252, 0.85) !important;
+}
+.swiper-lazy-preloader-white {
+  --swiper-preloader-color: #FCFCFC;
+}
+.swiper-lazy-preloader-black {
+  --swiper-preloader-color: #262626;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background: transparent;
+  opacity: 0.55;
+  --swiper-navigation-color: rgba(252, 252, 252, 0.85);
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: transparent;
+  opacity: 0.85;
+  --swiper-navigation-color: #fcfcfc;
+}
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px)) !important;
+  box-shadow: inset 1px 1px 1px rgba(38, 38, 38, 0.85);
+  background: var(--swiper-pagination-bullet-inactive-color, rgba(252, 252, 252, 0.85)) !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.55) !important;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+.swiper-pagination-bullet-active {
+  box-shadow: inset 1px 1px 1px rgba(38, 38, 38, 0.85);
+  background: var(--swiper-pagination-bullet-active-color, rgba(252, 252, 252, 0.85)) !important;
+  opacity: var(--swiper-pagination-bullet-active-opacity, 0.85) !important;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}
+    </style>
+</head>
+
+<body>
+   <h1 style="color:Red;font-size:46px;padding:50px 0;">Animation 1 </h1>
+    <!-- Section 1 -->
+    <section class="relative">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
+    <!-- Slider main container -->
+    <div class="swiper swiper-scale-effect">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slide-01 swiper-slide-cover"></div>
+          <div>Slide 01</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-02 swiper-slide-cover"></div>
+          <div>Slide 02</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-03 swiper-slide-cover"></div>
+          <div>Slide 03</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-04 swiper-slide-cover"></div>
+          <div>Slide 04</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-05 swiper-slide-cover"></div>
+          <div>Slide 05</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-06 swiper-slide-cover"></div>
+          <div>Slide 06</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-07 swiper-slide-cover"></div>
+          <div>Slide 07</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-08 swiper-slide-cover"></div>
+          <div>Slide 08</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-09 swiper-slide-cover"></div>
+          <div>Slide 09</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-10 swiper-slide-cover"></div>
+          <div>Slide 10</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-11 swiper-slide-cover"></div>
+          <div>Slide 11</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-12 swiper-slide-cover"></div>
+          <div>Slide 12</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-13 swiper-slide-cover"></div>
+          <div>Slide 13</div>
+        </div>
+              <div class="swiper-slide">
+          <div class="slide-14 swiper-slide-cover"></div>
+          <div>Slide 14</div>
+        </div>
+        </div>
+      <!-- <div class="swiper-pagination"></div> -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      </div>
+    </div>
+</section>
+
+    <!-- Section 2 -->
+<h1 style="color:Red;font-size:46px;padding:50px 0;">Animation 2 </h1>
+    <section class="relative">
+    <div class="flex gap-5">
+        <div class="elementor-element elementor-element-4d4f98d6 elementor-cta--layout-image-above elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-cta--skin-classic elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action animated fadeInUp" data-id="4d4f98d6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="call-to-action.default" style="width:400px;">
+            <div class="elementor-widget-container">
+              <div class="elementor-cta">
+                <div class="elementor-cta__bg-wrapper">
+                  <div class="elementor-cta__bg elementor-bg" style="background-image: url(https://miro.medium.com/v2/resize:fit:700/1*1tPDjHYT1rPrD8livIWNew.png);" role="img" aria-label="businessman-with-smartphone-in-car-at-airport-e1631573766858.jpg"></div>
+                  <div class="elementor-cta__bg-overlay"></div>
+                </div>
+                <div class="elementor-cta__content">
+                  <h3 class="elementor-cta__title elementor-cta__content-item elementor-content-item">Heading 1</h3>
+                  <div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
+                    content
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="elementor-element elementor-element-4d4f98d6 elementor-cta--layout-image-above elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-cta--skin-classic elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action animated fadeInUp" data-id="4d4f98d6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="call-to-action.default" style="width:400px;">
+            <div class="elementor-widget-container">
+              <div class="elementor-cta">
+                <div class="elementor-cta__bg-wrapper">
+                  <div class="elementor-cta__bg elementor-bg" style="background-image: url(https://miro.medium.com/v2/resize:fit:700/1*1tPDjHYT1rPrD8livIWNew.png);" role="img" aria-label="businessman-with-smartphone-in-car-at-airport-e1631573766858.jpg"></div>
+                  <div class="elementor-cta__bg-overlay"></div>
+                </div>
+                <div class="elementor-cta__content">
+                  <h3 class="elementor-cta__title elementor-cta__content-item elementor-content-item">Heading 2</h3>
+                  <div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
+                    Content
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    </section>
+    
+    <h1 style="color:Red;font-size:46px;padding:50px 0;">Animation 3 </h1>
+
+    <!-- Section 3 -->
+    <section class="relative features-pos" >
+    <!--
+        <div class="feature-heading">
+            <h2 class="inter"><span>Lorem ipsum</span> dolor</h2>
+        </div>
+        <div class="relative mx-auto lg:max-w-7xl max-lg:max-w-7xl max-sm:w-full">
+            <h3 class="inter">Lorem ipsum dolor sit amet, consectetur elit sed</h3>
+            <p class="inter">Lorem ipsum dolor sit amet, consectetur timpes adipiscing elit sed do eiusmod tempor
+                eatuedel&nbsp;<br>incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        -->
+        <div class="relative flex mx-auto lg:max-w-7xl max-lg:max-w-7xl max-sm:w-full">
+            <div class="flex features-icon-gap items-center">
+               <!-- <div>
+                    <img class="features-icon" src="/home/nishu/Desktop/nishu-pos/images/features-icon.webp"
+                        alt="image_icon">
+                </div>-->
+                <h4 class="inter">Order Management System</h4>
+            </div>
+        </div>
+        <div class="relative flex mx-auto lg:max-w-7xl max-lg:max-w-7xl max-sm:w-full">
+            <div class="w-1/3">
+                <div class="features-btn flex flex-col justify-center">
+                    <button id="feature-btn1" class="inter" disabled>Inventory Management</button>
+                    <button id="feature-btn2" class="inter" disabled>Warehouse Location</button>
+                    <button id="feature-btn3" class="inter" disabled>Goods in Process</button>
+                    <button id="feature-btn4" class="inter" disabled>Order Management</button>
+                </div>
+            </div>
+            <div class="w-1/3">
+                <img id="image_features" class="flex m-auto" src="/home/nishu/Desktop/nishu-pos/images/feature1.webp"
+                    alt="image_features">
+            </div>
+            <div class="w-1/3">
+                <div class="features-btn flex flex-col justify-center items-end">
+                    <button id="feature-btn5" class="inter" disabled>Shipping Management</button>
+                    <button id="feature-btn6" class="inter" disabled>Order Packing</button>
+                    <button id="feature-btn7" class="inter" disabled>Return Management</button>
+                    <button id="feature-btn8" class="inter" disabled>Integration</button>
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+
+   
+
+    <!-- swipper -->
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+  var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal', // or 'vertical'
+    loop: true,
+    centeredSlides: true,
+    
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+
+    // Use slide or fade transition effect
+    speed: 2000,
+    effect: 'fade',
+    fadeEffect: {
+          crossFade: true,
+     },
+  });
+});
+        var imageElements = [
+            document.getElementById('image_features'),
+            document.getElementById('image_features2')
+        ];
+
+        var imgLists = [
+            [
+                "https://getpos.in/files/feature1.webp",
+                "https://getpos.in/files/feature2.webp",
+                "https://getpos.in/files/feature3.webp",
+                "https://getpos.in/files/feature4.webp",
+                "https://getpos.in/files/feature5.webp",
+                "https://getpos.in/files/feature6.webp",
+                "https://getpos.in/files/feature7.webp",
+                "https://getpos.in/files/feature8.webp"
+            ],
+            [
+                "https://getpos.in/files/feature1.webp",
+                "https://getpos.in/files/feature2.webp",
+                "https://getpos.in/files/feature3.webp",
+                "https://getpos.in/files/feature4.webp",
+                "https://getpos.in/files/feature5.webp",
+                "https://getpos.in/files/feature6.webp",
+                "https://getpos.in/files/feature7.webp",
+                "https://getpos.in/files/feature8.webp"
+            ]
+        ];
+
+        var featureButtons = [
+            document.querySelectorAll('.features-btn button'),
+            document.querySelectorAll('.features-btn2 button')
+        ];
+
+        var currentIndexes = [0, 0];
+
+        function changeImage(imageElement, imageList, buttonList, index) {
+            setInterval(function () {
+                imageElement.src = imageList[currentIndexes[index]];
+                highlightButton(currentIndexes[index], buttonList);
+                currentIndexes[index] = (currentIndexes[index] + 1) % imageList.length;
+            }, 1500);
+        }
+
+        function highlightButton(index, buttonList) {
+            // Remove highlight from all buttons
+            buttonList.forEach(function (button) {
+                button.classList.remove('highlight');
+            });
+
+            // Highlight the corresponding button
+            if (index >= 0 && index < buttonList.length) {
+                buttonList[index].classList.add('highlight');
+            }
+        }
+
+        imageElements.forEach((imageElement, index) => {
+            changeImage(imageElement, imgLists[index], featureButtons[index], index);
+        });
+    </script>
+</body>
+
+</html>
